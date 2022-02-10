@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiber Construct - Startseite</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/ad1e9f7653.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--<link href="style/fontawesome/css/all.css" rel="stylesheet">-->
+    <style>
+        .come-in {
+            transform: translateY(150px);
+            animation: come-in 1.2s ease forwards;
+        }
+
+        .come-in:nth-child(odd) {
+            animation-duration: 1.0s; /* So they look staggered */
+        }
+
+        @keyframes come-in {
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="nav" id="nav">
+        <div class="navLogo">
+            <a href="#" class="logo">
+                <img src="assets/Fiber_Logo_gelb_weiss.png">
+            </a>
+        </div>
+        <div class="hamburger" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <div class="nav__link hide">
+            <div class="navElementsLogo">
+                <a href="#" class="logo">
+                    <img src="assets/Fiber_Logo_gelb_weiss.png">
+                </a>
+            </div>
+            <div class="navElements" onclick="myFunction(this)">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+                <a href="#footer">blog</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-hero" id="video">
+    <video autoplay loop muted preload poster id="video-hero">
+        <source src="assets/Trailer_sound_text.mp4" type="video/mp4"/>
+        <source src="" type="video/webm"/>
+        <img alt="BS Light+Sound" src="wp-content/uploads/2021/10/BS-Light-Sound-Hero.png" width="100%"
+             height="auto"/>
+    </video>
+
+    <!--<div class="layer-hero">
+        <div style="height: 150px; margin-top: 300px; overflow: hidden; z-index: 40000000;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #e1efe3;"></path>
+            </svg>
+        </div>
+    </div>-->
+    <!--
+    <h1 class="centered-video-title fade-in-title">Willkommen bei BS Light+Sound</h1>
+    <p class="centered-video-text fade-in-text">Wir sind Ihr kompetenter Ansprechpartner bei Licht- & Tonausstattung</p>
+    <a href="https://bs-light-sound.de/#contact" class="btn btn-primary centered-video-button fade-in-button">Kontakt</a>-->
+</div>
+
+<div class="headTitleText module">
+    <h1>
+        Wir errichten die Netz-Infrastruktur von und für morgen.
+    </h1>
+    <h3>
+        Anschlussfertig, ganzheitlich und aus einer Hand.
+    </h3>
+</div>
+
+<section id="about" class="about module">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+                <div class="content">
+                    <h2>&Uuml;ber Uns</h2>
+                    <p class="text-justify">
+                        Fiber ist das englische Wort für (Glas)Faser. Dementsprechend übernehmen wir die
+                        europaweite Planung von Netz-Infrastrukturen.
+                    </p>
+                    <p class="text-justify" style="margin-bottom: 40px;">
+                        Beginnend mit der ersten Phase Ihres Vorhabens beraten und unterstützen wir Sie, damit von
+                        Beginn an alles richtig abläuft. Wir demonstrieren Ihnen passende Möglichkeiten für die
+                        Umsetzung Ihres Glasfaser-Projekts, während die jeweiligen örtlichen Anforderungen beachtet
+                        werden. Mit uns schöpfen Sie bis zum Ende das volle Potenzial aus.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <img class="about-image img-fluid mx-auto" alt="Generic placeholder image"
+                     src="assets/Fiber_Logo_gelb_weiss.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="why-us" class="why-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="box module">
+                    <h4>Wir vernetzen die Zukunft</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="box module">
+                    <h4>Wir beschleunigen das Internet</h4>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="box module">
+                    <h4>Wir entwickeln nachhaltig weiter</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row exercise">
+        <div class="col-lg-3 module">
+            <div class="center"><i class="fa fa-handshake"></i></div>
+            <h2>Beratung</h2>
+            <p>Unsere Experten beraten Sie rund um das Thema Glasfaser-Internet und -Anschluss, sowie dafür infrage
+                kommende Förderprogramme. Wir versorgen Städte und Landkreise flächendeckend mit dem schnellsten
+                Breitbandanschluss. Deshalb sehen wir in einer individuellen, erstklassigen Beratung den
+                essenziellen
+                Grundstein für ein gelungenes Bauprojekt.</p>
+            <a class="elementbutton module" href="#" role="button">Klick Mich</a>
+        </div>
+        <div class="col-lg-3 module">
+            <div class="center"><i class="fa fa-brain"></i></div>
+            <h2>Planung</h2>
+            <p>Wir planen den Verlauf der Glasfaserleitungen. Infolgedessen durchlaufen wir mit Ihnen alle Schritte
+                bis
+                zu einer Genehmigung. Auf diesem Weg wird gegebenenfalls bestimmt, ob sich andere Fachbereiche an
+                der
+                Durchführung beteiligen werden. Obwohl wir auf höchste Qualität großen Wert legen, suchen wir nach
+                einer
+                möglichst kostengünstigen Lösung. Zudem erstellen wir Kalkulations- und Netzplanungsunterlagen.
+                Aufgrund
+                unserer stetigen Weiterbildung sowie Fortbildung können wir auch in der technischen Planung höchstes
+                Niveau garantieren.</p>
+            <a class="elementbutton module" href="#" role="button">Klick Mich</a>
+        </div>
+        <div class="col-lg-3 module">
+            <div class="center"><i class="fa fa-hammer"></i></div>
+            <h2>Baubegleitung</h2>
+            <p>Von Beginn an verfolgen wir alle Baumaßnahmen vor Ort. Neben Organisation und Koordination übernehmen
+                wir
+                auch die Überwachung der einzelnen Teilbereiche des Baus. Hierzu zählen unter anderem das Überwachen
+                des
+                gesamten Baus, die Einhaltung jeglicher Vorschriften bei der Bauausführung, aber auch die Abnahme
+                und
+                Dokumentation in der Umfassung der Rotberichtigung.
+                Zudem kümmern wir uns um die richtige Montage und Vermessung.
+            </p>
+            <a class="elementbutton module" href="#" role="button">Klick Mich</a>
+        </div>
+        <div class="col-lg-3 module">
+            <div class="center"><i class="fa fa-file-signature"></i></div>
+            <h2>Dokumentation</h2>
+            <p>Die Dokumentation der einzelnen Bauvorhaben ist uns sehr wichtig. Deshalb garantieren unsere
+                Dokumentatoren eine hochwertige und fehlerfreie Datenerfassung, welche sie durch ihr technisches
+                Expertenwissen in den verschiedenen Geoinformationssystemen erfassen.</p>
+            <a class="elementbutton module" href="#" role="button">Klick Mich</a>
+        </div>
+    </div>
+
+
+    <!-- START THE FEATURETTES -->
+
+    <!--<hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span
+                    class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+                semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                commodo.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+                 alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+                semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                commodo.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+                 alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+                semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                commodo.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
+                 alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">-->
+
+    <!-- /END THE FEATURETTES -->
+
+    <section class="ftco-section module">
+        <div class="container">
+            <!--<div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Contact Form #01</h2>
+                </div>
+            </div>-->
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-12">
+                    <div class="wrapper">
+                        <div class="row no-gutters">
+                            <div class="col-md-7 d-flex align-items-stretch">
+                                <div class="contact-wrap w-100 p-md-5 p-4">
+                                    <h2 class="mb-4">Kontaktieren Sie uns</h2>
+                                    <!--<div id="form-message-warning" class="mb-4"></div>
+                                    <div id="form-message-success" class="mb-4">
+                                        Your message was sent, thank you!
+                                    </div>-->
+                                    <form method="POST" id="contactForm" name="contactForm">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="name" id="name"
+                                                           placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control" name="email" id="email"
+                                                           placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="subject"
+                                                           id="subject"
+                                                           placeholder="Subject">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea name="message" class="form-control" id="message" cols="30"
+                                                              rows="7" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <!--<input type="submit" value="Send Message" class="btn btn-primary">-->
+                                                    <a class="elementbutton" href="#" role="button">Nachricht
+                                                        senden</a>
+                                                    <div class="submitting"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-5 d-flex align-items-stretch">
+                                <div class="info-wrap primaryColor primaryBackColor w-100 p-lg-5 p-4">
+                                    <h3 class="mb-4 mt-md-4">Contact us</h3>
+                                    <div class="dbox w-100 d-flex align-items-start">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-map-marker"></span>
+                                        </div>
+                                        <div class="text pl-3 contactFormRightText">
+                                            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY
+                                                10016
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-phone"></span>
+                                        </div>
+                                        <div class="text pl-3 contactFormRightText">
+                                            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-paper-plane"></span>
+                                        </div>
+                                        <div class="text pl-3 contactFormRightText">
+                                            <p><span>Email:</span> <a
+                                                    href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="dbox w-100 d-flex align-items-center">
+                                        <div class="icon d-flex align-items-center justify-content-center">
+                                            <span class="fa fa-globe"></span>
+                                        </div>
+                                        <div class="text pl-3 contactFormRightText">
+                                            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer id="footer">
+    <!--<div class="elementbutton">Test</div>-->
+    <div class="footerBottomLinksContainer">
+        <a style="margin-right: 20px" href="#">
+            <i class="fa fa-xing"></i>
+        </a>
+        <a style="margin-left: 20px; margin-right: 20px" href="#">
+            <i class="fa fa-linkedin"></i>
+        </a>
+        <a style="margin-left: 20px" href="#">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </div>
+    <div class="footerBottomLinksContainer">
+        <a style="margin-right: 20px" href="#">
+            Startseite
+        </a>
+        <a style="margin-left: 20px; margin-right: 20px" href="datenschutz.html">
+            Datenschutz
+        </a>
+        <a style="margin-left: 20px" href="impressum.html">
+            Impressum
+        </a>
+    </div>
+    <div class="copyright">
+        <p>Made with ❤ in Ingolstadt by</p>
+        <p><a href="https://region10.group/" target="_blank">REGION10 GROUP GmbH</a></p>
+        <p></p>
+        <p>© 2021 - <script>document.write(new Date().getFullYear())</script> Fiber Construct.</p>
+        <p>All rights reserved.</p>
+    </div>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    (function ($) {
+
+        /**
+         * Copyright 2012, Digital Fusion
+         * Licensed under the MIT license.
+         * http://teamdf.com/jquery-plugins/license/
+         *
+         * @author Sam Sehnert
+         * @desc A small plugin that checks whether elements are within
+         *     the user visible viewport of a web browser.
+         *     only accounts for vertical position, not horizontal.
+         */
+
+        $.fn.visible = function (partial) {
+
+            var $t = $(this),
+                $w = $(window),
+                viewTop = $w.scrollTop(),
+                viewBottom = viewTop + $w.height(),
+                _top = $t.offset().top,
+                _bottom = _top + $t.height(),
+                compareTop = partial === true ? _bottom : _top,
+                compareBottom = partial === true ? _top : _bottom;
+
+            return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+        };
+
+    })(jQuery);
+
+    var win = $(window);
+    var allMods = $(".module");
+
+    // Already visible modules
+    allMods.each(function (i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            el.addClass("already-visible");
+        }
+    });
+
+    win.scroll(function (event) {
+
+        allMods.each(function (i, el) {
+            var el = $(el);
+            if (el.visible(true)) {
+                el.addClass("come-in");
+            }
+        });
+
+    });
+</script>
+</body>
+</html>
