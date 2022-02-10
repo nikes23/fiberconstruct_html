@@ -7,6 +7,7 @@ hamburger.addEventListener('click', () => {
 });
 navElements.addEventListener('click', () => {
     navLink.classList.toggle('hide');
+    myFunction(hamburger);
 });
 
 function myFunction(x) {
