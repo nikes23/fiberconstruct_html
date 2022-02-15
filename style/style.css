@@ -78,7 +78,8 @@
 
     .belowLawSites h3 {
         color: #fbb900;
-        font-size: 35px;
+        font-size: 25px;
+        text-align: center;
     }
 
     .centered-video-button {
@@ -346,7 +347,7 @@
 
     .belowLawSites h3 {
         color: #fbb900;
-        font-size: 35px;
+        font-size: 25px;
     }
 
     #video-hero {
