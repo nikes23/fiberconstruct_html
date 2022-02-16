@@ -1,4 +1,55 @@
 @media only screen and (max-width: 767px) {
+    .marketing_img_1 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_2 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_3 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_4 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+    }
+
     .layer-hero {
         background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
@@ -68,8 +119,8 @@
     }
 
     h2 {
-        font-size: 40px!important;
-        margin-bottom: 25px!important;
+        font-size: 40px !important;
+        margin-bottom: 25px !important;
     }
 
     .headTitleText h3 {
@@ -103,7 +154,7 @@
         margin-right: auto;
         top: 25%;
         color: #fbb900;
-        font-size: 40px!important;
+        font-size: 40px !important;
         font-weight: 500;
     }
 
@@ -116,7 +167,7 @@
         margin-right: auto;
         top: 30%;
         color: #FFFFFF;
-        font-size: 30px!important;
+        font-size: 30px !important;
         font-weight: 500;
     }
 
@@ -132,7 +183,7 @@
         background-size: contain;
     }
 
-    .marketing p{
+    .marketing p {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -252,19 +303,126 @@
         animation: lightning 7.4s linear infinite;
         font-size: 25px;
     }
+
     .line7 {
         animation: lightning 3.5s linear infinite;
         font-size: 30px;
     }
 
-    .contactForm span{
-        font-size: 25px!important;
+    .contactForm span {
+        font-size: 25px !important;
     }
 
-    .contactForm a{
-        font-size: 20px!important;
+    .contactForm a {
+        font-size: 20px !important;
     }
 
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .marketing_img_1 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_2 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_3 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_4 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+    .marketing_img_1 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_2 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_3 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_4 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 80px;
+    }
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
@@ -337,8 +495,8 @@
     }
 
     h2 {
-        font-size: 40px!important;
-        margin-bottom: 25px!important;
+        font-size: 40px !important;
+        margin-bottom: 25px !important;
     }
 
     .headTitleText h3 {
@@ -371,7 +529,7 @@
         margin-right: auto;
         top: 35%;
         color: #fbb900;
-        font-size: 40px!important;
+        font-size: 40px !important;
         font-weight: 500;
     }
 
@@ -384,7 +542,7 @@
         margin-right: auto;
         top: 40%;
         color: #FFFFFF;
-        font-size: 30px!important;
+        font-size: 30px !important;
         font-weight: 500;
     }
 
@@ -510,6 +668,57 @@
 }
 
 @media only screen and (min-width: 1201px) {
+    .marketing_img_1 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_2 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_3 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_4 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 80px;
+    }
+
     .layer-hero {
         background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
@@ -579,8 +788,8 @@
     }
 
     h2 {
-        font-size: 40px!important;
-        margin-bottom: 25px!important;
+        font-size: 40px !important;
+        margin-bottom: 25px !important;
     }
 
     .headTitleText h3 {
@@ -613,7 +822,7 @@
         margin-right: auto;
         top: 40%;
         color: #fbb900;
-        font-size: 45px!important;
+        font-size: 45px !important;
         font-weight: 500;
     }
 
@@ -626,7 +835,7 @@
         margin-right: auto;
         top: 50%;
         color: #FFFFFF;
-        font-size: 35px!important;
+        font-size: 35px !important;
         font-weight: 500;
     }
 
@@ -744,6 +953,7 @@
         animation: lightning 7.4s linear infinite;
         font-size: 24px;
     }
+
     .line7 {
         animation: lightning 3.5s linear infinite;
         font-size: 30px;
@@ -751,8 +961,58 @@
 }
 
 
-
 @media only screen and (min-width: 2500px) {
+    .marketing_img_1 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_2 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_3 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .marketing_img_4 {
+        width: 80%;
+        height: 300px !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        background-size: contain;
+        margin-top: 50px;
+    }
+
     #video-hero {
         max-width: 100%;
         margin-top: -150px;
@@ -767,7 +1027,7 @@
 }
 
 
-body{
+body {
     min-width: fit-content;
 }
 
@@ -832,7 +1092,7 @@ body {
     margin-bottom: 20px;
 }
 
-.footerBottomLinksContainer i{
+.footerBottomLinksContainer i {
     font-size: 35px;
 }
 
@@ -919,7 +1179,7 @@ body a:hover {
 }
 
 .about {
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 .center i {
@@ -967,6 +1227,13 @@ h2 {
     color: #fbb900;
 }
 
+.about-image {
+    min-width: 400px;
+    min-height: auto;
+    padding: 70px 0;
+    text-align: center;
+}
+
 .about-container .about-text {
     margin: 0;
     position: absolute;
@@ -1001,7 +1268,6 @@ h2 {
     margin-bottom: 20px;
     border-radius: 5px;
 }
-
 
 
 .exercise a:hover {
