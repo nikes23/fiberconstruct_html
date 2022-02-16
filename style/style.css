@@ -1,4 +1,9 @@
 @media only screen and (max-width: 767px) {
+    .about-image {
+        padding: 20px 0;
+        text-align: center;
+    }
+
     .marketing_img_1 {
         width: 80%;
         height: 300px !important;
@@ -201,8 +206,8 @@
         height: 260px;
         justify-content: center;
         width: 90%;
-        margin-bottom: 50px;
-        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-top: 10px;
 
     }
 
@@ -218,8 +223,8 @@
         height: 260px;
         justify-content: center;
         width: 90%;
-        margin-bottom: 50px;
-        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     .why-us .box:active {
@@ -234,8 +239,8 @@
         height: 260px;
         justify-content: center;
         width: 90%;
-        margin-bottom: 50px;
-        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     .elementbuttonContact {
@@ -426,6 +431,13 @@
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
+    .about-image {
+        min-width: 400px;
+        min-height: auto;
+        padding: 70px 0;
+        text-align: center;
+    }
+
     .layer-hero {
         background-color: rgba(0, 0, 0, 0.5);
         position: absolute;
@@ -668,6 +680,13 @@
 }
 
 @media only screen and (min-width: 1201px) {
+    .about-image {
+        min-width: 400px;
+        min-height: auto;
+        padding: 70px 0;
+        text-align: center;
+    }
+
     .marketing_img_1 {
         width: 80%;
         height: 300px !important;
@@ -1031,6 +1050,9 @@ body {
     min-width: fit-content;
 }
 
+.why-us {
+    margin-top: 100px;
+}
 
 .come-in {
     transform: translateY(150px);
@@ -1225,13 +1247,6 @@ h2 {
 
 .about h2 span {
     color: #fbb900;
-}
-
-.about-image {
-    min-width: 400px;
-    min-height: auto;
-    padding: 70px 0;
-    text-align: center;
 }
 
 .about-container .about-text {
