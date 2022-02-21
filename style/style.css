@@ -5,7 +5,7 @@
 
     .powerCableButtonText {
         display: block;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         left: 42%;
         color: #FFFFFF;
@@ -630,7 +630,7 @@
 
     .powerCableButtonText {
         display: block;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         left: 44%;
         color: #FFFFFF;
@@ -687,7 +687,7 @@
 
     .powerCableButtonText {
         display: block;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         left: 45%;
         color: #FFFFFF;
@@ -1117,7 +1117,7 @@
 
     .powerCableButtonText {
         display: block;
-        position: fixed;
+        position: absolute;
         bottom: 0;
         left: 49%;
         color: #FFFFFF;
