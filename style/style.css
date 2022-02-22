@@ -1637,6 +1637,47 @@
     }*/
 }
 
+
+.elementbuttonContactSubmit {
+    border-radius: 32px;
+    background: linear-gradient(145deg, #2b2b2b, #333333);
+    box-shadow: 12px 12px 24px #292929,
+    -12px -12px 24px #373737;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    width: 180px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border: none!important;
+    color: #fbb900!important;
+}
+
+.elementbuttonContactSubmit:active {
+    border-radius: 32px;
+    background: #303030;
+    box-shadow: inset 12px 12px 24px #292929,
+    inset -12px -12px 24px #373737;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    width: 180px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border: none!important;
+    color: #fbb900!important;
+}
+
 .about-us-text {
     width: 80% !important;
     margin-left: auto;
@@ -1825,6 +1866,10 @@ body {
     font-size: 35px;
 }
 
+.footerSmallLine{
+    margin-bottom: 20px!important;
+}
+
 .headTitleText {
     width: 80%;
     margin-left: auto;
@@ -1836,6 +1881,7 @@ body {
 
 .copyright {
     margin-bottom: 50px;
+    line-height: 1!important;
 }
 
 .headTitleText h1 {
@@ -1904,7 +1950,7 @@ body a:hover {
 }*/
 
 .centerIconImage {
-    width: 60px;
+    width: 55px;
     height: auto;
     margin: 0;
     position: absolute;
