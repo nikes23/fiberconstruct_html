@@ -1,12 +1,13 @@
 @media only screen and (max-width: 767px) {
     .powerCableButton {
         left: 45% !important;
+        margin-bottom: 90px!important;
     }
 
     .powerCableButtonText {
         display: block;
         position: absolute;
-        bottom: 0;
+        bottom: 50px;
         left: 42%;
         color: #FFFFFF;
         font-size: 18px;
@@ -275,7 +276,7 @@
     }
 
     .centered-video-title {
-        line-height: 200%;
+        line-height: 1.2;
         text-align: center;
         position: relative;
         width: 90%;
@@ -288,7 +289,7 @@
     }
 
     .centered-video-text {
-        line-height: 160%;
+        line-height: 1.2;
         text-align: center;
         position: relative;
         width: 90%;
@@ -631,7 +632,7 @@
     .powerCableButtonText {
         display: block;
         position: absolute;
-        bottom: 0;
+        bottom: 50px;
         left: 44%;
         color: #FFFFFF;
         font-size: 18px;
@@ -670,6 +671,8 @@
     .navLogo img {
         height: 300px;
         transition: height 0.4s;
+        margin-top: -50px;
+        margin-bottom: 50px;
     }
 
     .marketing {
@@ -964,7 +967,7 @@
     }
 
     .centered-video-title {
-        line-height: 200%;
+        line-height: 1.2;
         text-align: center;
         position: relative;
         width: 90%;
@@ -977,7 +980,7 @@
     }
 
     .centered-video-text {
-        line-height: 160%;
+        line-height: 1.2;
         text-align: center;
         position: relative;
         width: 90%;
