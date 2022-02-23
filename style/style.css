@@ -1571,9 +1571,9 @@
 }
 */
 
-html {
+/*html {
     scroll-behavior: smooth;
-}
+}*/
 
 .powerCableButton {
     animation: shake 2.5s ease infinite;

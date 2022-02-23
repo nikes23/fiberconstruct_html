@@ -21,9 +21,13 @@
     <meta name="msapplication-square150x150logo" content="icons/150.png">
     <meta name="msapplication-wide310x150logo" content="icons/310x150.png">
     <meta name="msapplication-square310x310logo" content="icons/310.png">
+    <!-- We include the API -->
+    <script src = "https://cdn.jsdelivr.net/npm/universalsmoothscroll@latest/universalsmoothscroll-min.js"></script>
+    <!-- We include the API's easing library (this is optional) -->
+    <script src = "https://cdn.jsdelivr.net/npm/universalsmoothscroll@latest/universalsmoothscroll-ease-functions-min.js"></script>
     <!--<link href="style/fontawesome/css/all.css" rel="stylesheet">-->
 </head>
-<body ontouchstart="">
+<body ontouchstart="" onload="init()">
 <header>
     <nav class="nav" id="nav">
         <div class="navLogo">
@@ -44,18 +48,18 @@
                 </a>
             </div>
             <div class="navElements" onclick="myFunction(this)">
-                <a href="#">Start</a>
-                <a href="#about">Über Uns</a>
-                <a href="#why-us">Leistungen</a>
-                <a href="#contact">Kontakt</a>
+                <a href="#" onclick="closeNavLayer()">Start</a>
+                <a href="#about" onclick="closeNavLayer()">Über Uns</a>
+                <a href="#why-us" onclick="closeNavLayer()">Leistungen</a>
+                <a href="#contact" onclick="closeNavLayer()">Kontakt</a>
             </div>
         </div>
     </nav>
 </header>
 <div class="container-hero" id="video">
     <video autoplay loop muted playsinline preload poster id="video-hero">
-        <source src="assets/Fiber_Costruct_Website_Video.mp4" type="video/mp4"/>
-        <source src="assets/Fiber_Costruct_Website_Video.webm" type="video/webm"/>
+        <source src="assets/FiberConstruct_Trailer_720.mp4" type="video/mp4"/>
+        <source src="assets/FiberConstruct_Trailer_720.webm" type="video/webm"/>
         <img alt="Fiber Construct" src="assets/Standbild_FiberConstruct_Video.png" width="100%"
              height="auto"/>
     </video>
@@ -493,96 +497,5 @@
     </div>
 </footer>
 <script type="text/javascript" src="js/main.js"></script>
-<script>
-    (function ($) {
-
-        /**
-         * Copyright 2012, Digital Fusion
-         * Licensed under the MIT license.
-         * http://teamdf.com/jquery-plugins/license/
-         *
-         * @author Sam Sehnert
-         * @desc A small plugin that checks whether elements are within
-         *     the user visible viewport of a web browser.
-         *     only accounts for vertical position, not horizontal.
-         */
-
-        $.fn.visible = function (partial) {
-
-            var $t = $(this),
-                $w = $(window),
-                viewTop = $w.scrollTop(),
-                viewBottom = viewTop + $w.height(),
-                _top = $t.offset().top,
-                _bottom = _top + $t.height(),
-                compareTop = partial === true ? _bottom : _top,
-                compareBottom = partial === true ? _top : _bottom;
-
-            return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
-
-        };
-
-    })(jQuery);
-
-    var win = $(window);
-    var allMods = $(".module");
-
-    // Already visible modules
-    allMods.each(function (i, el) {
-        var el = $(el);
-        if (el.visible(true)) {
-            el.addClass("already-visible");
-        }
-    });
-
-    win.scroll(function (event) {
-
-        allMods.each(function (i, el) {
-            var el = $(el);
-            if (el.visible(true)) {
-                el.addClass("come-in");
-            }
-        });
-
-    });
-
-
-    const contactForm = document.querySelector('.contactForm');
-    let firstname = document.getElementById('firstname');
-    let lastname = document.getElementById('lastname');
-    let mail = document.getElementById('mail');
-    let subject = document.getElementById('subject');
-    let message = document.getElementById('message');
-
-    contactForm.addEventListener('submit', (e)=>{
-        e.preventDefault();
-        let formData = {
-            firstname: firstname.value,
-            lastname: lastname.value,
-            mail: mail.value,
-            subject: subject.value,
-            message: message.value
-        }
-        let xhr = new XMLHttpRequest();
-        xhr.open('POST', '/send');
-        xhr.setRequestHeader('content-type', 'application/json');
-        xhr.onload = function (){
-            console.log(xhr.responseText);
-            if(xhr.responseText == 'success'){
-                alert('Die Nachricht wurde erfolgreich gesendet');
-                firstname.value = '';
-                lastname.value = '';
-                mail.value = '';
-                subject.value = '';
-                message.value = '';
-            } else {
-                alert('Etwas ist schief gegangen')
-            }
-        }
-
-        xhr.send(JSON.stringify(formData));
-    })
-
-</script>
 </body>
 </html>
